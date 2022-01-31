@@ -10,8 +10,19 @@ $stmt->bind_param("i", $_GET['action_id']);
 $stmt->execute();
 
 $result = $stmt->get_result();
-if($result->num_rows === 0) 
-    exit('No rows');
+if($result->num_rows === 0) {
+	?>
+	
+	<script>
+		swal("Update doesn't exist", "", "error")
+		.then( () => {
+			  window.history.back();
+		})
+	</script>
+
+	<?php
+} 
+    //exit('No rows');
 
 $row = $result->fetch_array();
 $stmt->close();
