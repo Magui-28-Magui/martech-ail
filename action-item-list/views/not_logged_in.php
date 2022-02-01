@@ -74,8 +74,9 @@ if (isset($login)) {
                     <a href="trigger.php" class="btn btn-danger btn-user btn-block">
                       <i class="fas fa-exclamation-triangle "></i> Trigger An Action
                     </a>
-
-
+                    <a href="new_user_form.php" class="btn btn-info btn-user btn-block">
+                      <i class="fas fa-user "></i> User Registration
+                    </a>
                   </form>                
                 </div>
               </div>

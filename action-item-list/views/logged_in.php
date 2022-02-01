@@ -56,6 +56,10 @@ switch($page)
         include("pages/users/user_add.php");
     break;
 
+    case "new_user_form":
+        include("pages/users/new_user_form.php");
+    break;
+
     case "user_update":
         include("pages/users/user_update.php");
     break;
